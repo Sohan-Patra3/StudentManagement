@@ -1,9 +1,9 @@
 @extends('layout')
 @section('content')
     <div class="card">
-        <div class="card-header">Student Page</div>
+        <div class="card-header">techer Page</div>
         <div class="card-body">
-            <form action="{{ route('students.store') }}" method="POST">
+            <form action="{{ route('techer.store') }}" method="POST">
                 @csrf
                 <label for="name">Name</label>
                 <input type="text" name="name" class="form-control"><br>

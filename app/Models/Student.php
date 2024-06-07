@@ -14,4 +14,6 @@ class Student extends Model
     protected $primarykey = "id";
 
     protected $fillable = ['name' , 'address' , 'mobile'];
+
+    public $timestamps = false;
 }
