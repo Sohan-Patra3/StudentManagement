@@ -14,8 +14,8 @@ class TeacherController extends Controller
      */
     public function index(): view
     {
-        $teachers = Teacher::all();
-        return view('teacher.index')->with('teachers' , $teachers);
+        $teacher = Teacher::all();
+        return view('teacher.index')->with('teacher' , $teacher);
     }
 
     /**
@@ -51,8 +51,8 @@ class TeacherController extends Controller
      */
     public function show(string $id)
     {
-        $Teacher = Teacher::find($id);
-        return view('teacher.show')->with('Teacher' , $Teacher);
+        $teacher = Teacher::find($id);
+        return view('teacher.show')->with('teacher' , $teacher);
     }
 
     /**

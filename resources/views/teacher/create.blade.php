@@ -3,7 +3,7 @@
     <div class="card">
         <div class="card-header">techer Page</div>
         <div class="card-body">
-            <form action="{{ route('techer.store') }}" method="POST">
+            <form action="{{ route('teacher.store') }}" method="POST">
                 @csrf
                 <label for="name">Name</label>
                 <input type="text" name="name" class="form-control"><br>
