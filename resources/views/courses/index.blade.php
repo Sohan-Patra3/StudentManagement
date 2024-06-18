@@ -11,6 +11,7 @@
             <table class="table">
                 <thead>
                     <tr>
+                        <th>#</th>
                         <th>Name</th>
                         <th>Syllasbus</th>
                         <th>Duration</th>
@@ -20,9 +21,10 @@
                 <tbody>
                     <tr>
                         @foreach ($courses as $item)
+                            <td>{{ $loop->iteration }}</td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->syllabus }}</td>
-                            <td>{{ $item->duration }}</td>
+                            <td>{{ $item->duration() }}</td>
                             <td>
                                 <a href="{{ url('/courses' . '/' . $item->id) }}"><button
                                         class="btn btn-info">View</button></a>

@@ -16,4 +16,8 @@ class Course extends Model
     protected $fillable = ['name' , 'syllabus' , 'duration'];
 
     protected $primarykey = "id";
+
+    public function duration(){
+        return $this->duration." Months";
+    }
 }

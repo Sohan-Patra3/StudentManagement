@@ -11,6 +11,7 @@
             <table class="table">
                 <thead>
                     <tr>
+                        <th>#</th>
                         <th>Name</th>
                         <th>Address</th>
                         <th>Mobile</th>
@@ -20,6 +21,7 @@
                 <tbody>
                     <tr>
                         @foreach ($students as $item)
+                            <td>{{ $loop->iteration }}</td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->address }}</td>
                             <td>{{ $item->mobile }}</td>

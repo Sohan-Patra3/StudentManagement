@@ -97,8 +97,8 @@
                     <a href="{{ url('/students') }}">Student</a>
                     <a href="{{ url('/teacher') }}">Teacher</a>
                     <a href="{{ url('/courses') }}">Courses</a>
-                    <a href="#about">Batches</a>
-                    <a href="#about">Enrollment</a>
+                    <a href="{{ url('/batches') }}">Batches</a>
+                    <a href="{{ url('/enrollments') }}">Enrollment</a>
                     <a href="#about">Payment</a>
                 </div>
             </div>
