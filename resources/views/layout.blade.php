@@ -99,7 +99,7 @@
                     <a href="{{ url('/courses') }}">Courses</a>
                     <a href="{{ url('/batches') }}">Batches</a>
                     <a href="{{ url('/enrollments') }}">Enrollment</a>
-                    <a href="#about">Payment</a>
+                    <a href="{{ url('/payments') }}">Payment</a>
                 </div>
             </div>
 
